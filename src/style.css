@@ -1,3 +1,23 @@
 body {
-    background-color: rgb(168, 209, 195);
+    background-color: rgb(155, 236, 209);
+}
+
+#content {
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+.header {
+    border: 1px solid;
+    grid-row: 1 / 2;
+}
+
+.main-content {
+    border: 1px solid;
+    grid-row: 2 / 3;
+}
+
+.footer {
+    border: 1px solid;
+    grid-row: 3 / 4;
 }
