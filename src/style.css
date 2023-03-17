@@ -1,5 +1,13 @@
+:root {
+    --main-font: clamp(16px, 1.6vw, 1.5rem);
+    --title-font: clamp(20px, 3vw, 5rem);
+    --font-color: rgb(0, 0, 0);
+    --background-color: rgb(228, 206, 206);
+}
+
 body {
-    background-color: rgb(155, 236, 209);
+    background-color: var(--background-color);
+    margin: 0;
 }
 
 #content {
@@ -9,7 +17,18 @@ body {
 
 .header {
     border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-row: 1 / 2;
+}
+
+.header-button {
+    border: 1px solid;
+}
+
+.active-button {
+    border: 3px solid;
 }
 
 .main-content {
@@ -18,6 +37,21 @@ body {
 }
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid;
     grid-row: 3 / 4;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(var(--main-font) - 3px);
+}
+
+.github-mark {
+    width: var(--main-font);
+    transition: all .3s;
+}
+
+.github-mark:hover {
+    transform: rotate(360deg);
 }
