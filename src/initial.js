@@ -45,9 +45,10 @@ function initialPageRender() {
     footerImg.src = githubmark;
     footerYearContainer.textContent = ` ${footerYear} `;
     footerMailTo.setAttribute('href', 'mailto:proffery@gmail.com');
-    footerMailTo.setAttribute('title', 'Dmitry Shamko');
+    footerMailTo.setAttribute('title', 'Mail me');
     footerMailTo.textContent = ' Dmitry Shamko';
     footerBackImg.textContent = 'Photo by Rachel Claire from Pexels'
+    footerBackImg.setAttribute('title', 'Go to Pexels');
     footerBackImg.setAttribute('href', 'https://www.pexels.com/photo/mug-of-coffee-on-wooden-table-4577860/');
     
     footerHref.appendChild(footerImg);

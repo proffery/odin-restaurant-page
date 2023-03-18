@@ -110,7 +110,7 @@ a[href] {
 }
 
 a[href]:hover {
-    text-shadow: var(--shadow);
+    box-shadow: var(--shadow);
 }
 
 a:visited {
