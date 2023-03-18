@@ -2,102 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/contact.js":
-/*!************************!*\
-  !*** ./src/contact.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function contactPage() {
-  return console.log('contact');
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactPage);
-
-/***/ }),
-
-/***/ "./src/initial.js":
-/*!************************!*\
-  !*** ./src/initial.js ***!
-  \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _dist_githubmark_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../dist/githubmark.png */ "./dist/githubmark.png");
-
-function initialPageRender() {
-  const container = document.getElementById('content');
-  const header = document.createElement('div');
-  const mainContent = document.createElement('div');
-  const footer = document.createElement('div');
-  header.classList.add('header');
-  mainContent.classList.add('main-content');
-  footer.classList.add('footer');
-  container.append(header, mainContent, footer);
-  const homeButton = document.createElement('div');
-  const menuButton = document.createElement('div');
-  const contactButton = document.createElement('div');
-  homeButton.classList.add('header-button');
-  menuButton.classList.add('header-button');
-  contactButton.classList.add('header-button');
-  homeButton.textContent = 'Home';
-  menuButton.textContent = 'Menu';
-  contactButton.textContent = 'Contact';
-  header.append(homeButton, menuButton, contactButton);
-  const footerContent = document.createElement('p');
-  const footerCopyright = document.createElement('a');
-  const footerHref = document.createElement('a');
-  const footerImg = document.createElement('img');
-  const footerYearContainer = document.createElement('a');
-  const footerYear = new Date().getFullYear();
-  const footerMailTo = document.createElement('a');
-  footerCopyright.textContent = 'Copyright';
-  footerHref.setAttribute('href', 'https://github.com/proffery/odin-restaurant-page');
-  footerImg.classList.add('github-mark');
-  footerImg.src = _dist_githubmark_png__WEBPACK_IMPORTED_MODULE_0__["default"];
-  footerYearContainer.textContent = `${footerYear}`;
-  footerMailTo.setAttribute('href', 'mailto:proffery@gmail.com');
-  footerMailTo.setAttribute('title', 'Dmitry Shamko');
-  footerMailTo.textContent = 'Dmitry Shamko';
-  footerHref.appendChild(footerImg);
-  footerContent.append(footerCopyright, footerHref, footerYearContainer, footerMailTo);
-
-  // footerContent.innerHTML = `
-  //     <a>Copyright</a>
-  //     <a href="https://github.com/proffery"><img class="github-mark" src="/img/github-mark.png"></a> 
-  //     <a><script>document.write(new Date().getFullYear())</script></a> 
-  //     <a href="mailto:proffery@gmail.com" title="Dmitry Shamko">Dmitry Shamko</a>
-  //     <a>for Odin Project</a>
-  // `;
-  footer.appendChild(footerContent);
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialPageRender);
-
-/***/ }),
-
-/***/ "./src/menu.js":
-/*!*********************!*\
-  !*** ./src/menu.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function menuPage() {
-  return console.log('menu');
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuPage);
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.css":
 /*!****************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.css ***!
@@ -112,12 +16,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../dist/images/pexels-rachel-claire.jpg */ "./dist/images/pexels-rachel-claire.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --main-font: clamp(16px, 1.6vw, 1.5rem);\n  --title-font: clamp(20px, 3vw, 5rem);\n  --font-color: rgb(0, 0, 0);\n  --background-color: rgb(228, 206, 206);\n}\n\nbody {\n  background-color: var(--background-color);\n  margin: 0;\n}\n\n#content {\n  display: grid;\n  grid-template-rows: 1fr 5fr 1fr;\n}\n\n.header {\n  border: 1px solid;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  grid-row: 1/2;\n}\n\n.header-button {\n  border: 1px solid;\n}\n\n.active-button {\n  border: 3px solid;\n}\n\n.main-content {\n  border: 1px solid;\n  grid-row: 2/3;\n}\n\n.footer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 1px solid;\n  grid-row: 3/4;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(var(--main-font) - 3px);\n}\n\n.github-mark {\n  width: var(--main-font);\n  transition: all 0.3s;\n}\n\n.github-mark:hover {\n  transform: rotate(360deg);\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACI,uCAAA;EACA,oCAAA;EACA,0BAAA;EACA,sCAAA;AACJ;;AAEA;EACI,yCAAA;EACA,SAAA;AACJ;;AAEA;EACI,aAAA;EACA,+BAAA;AACJ;;AAEA;EACI,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,aAAA;AACJ;;AAEA;EACI,iBAAA;AACJ;;AAEA;EACI,iBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,aAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,uCAAA;AACJ;;AAEA;EACI,uBAAA;EACA,oBAAA;AACJ;;AAEA;EACI,yBAAA;AACJ","sourcesContent":[":root {\r\n    --main-font: clamp(16px, 1.6vw, 1.5rem);\r\n    --title-font: clamp(20px, 3vw, 5rem);\r\n    --font-color: rgb(0, 0, 0);\r\n    --background-color: rgb(228, 206, 206);\r\n}\r\n\r\nbody {\r\n    background-color: var(--background-color);\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    display: grid;\r\n    grid-template-rows: 1fr 5fr 1fr;\r\n}\r\n\r\n.header {\r\n    border: 1px solid;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    grid-row: 1 / 2;\r\n}\r\n\r\n.header-button {\r\n    border: 1px solid;\r\n}\r\n\r\n.active-button {\r\n    border: 3px solid;\r\n}\r\n\r\n.main-content {\r\n    border: 1px solid;\r\n    grid-row: 2 / 3;\r\n}\r\n\r\n.footer {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    border: 1px solid;\r\n    grid-row: 3 / 4;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: calc(var(--main-font) - 3px);\r\n}\r\n\r\n.github-mark {\r\n    width: var(--main-font);\r\n    transition: all .3s;\r\n}\r\n\r\n.github-mark:hover {\r\n    transform: rotate(360deg);\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --main-font: clamp(16px, 1.6vw, 1.5rem);\n  --title-font: clamp(20px, 3vw, 5rem);\n  --font-color: rgb(0, 0, 0);\n  --background-img: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\nbody {\n  background-image: var(--background-img);\n  background-size: auto;\n  background-position: center;\n  background-repeat: no-repeat;\n  margin: 0;\n}\n\n#content {\n  display: grid;\n  grid-template-rows: 1fr 5fr 1fr;\n}\n\n.header {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-row: 1/2;\n}\n\n.header-button {\n  margin: 1rem;\n}\n\n.active-button {\n  border: 3px solid;\n}\n\n.main-content {\n  grid-row: 2/3;\n}\n\n.footer {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-row: 3/4;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(var(--main-font) - 3px);\n}\n\n.github-mark {\n  width: var(--main-font);\n  transition: all 0.3s;\n  margin-left: 0.2rem;\n  margin-right: 0.2rem;\n}\n\n.github-mark:hover {\n  transform: rotate(360deg);\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACI,uCAAA;EACA,oCAAA;EACA,0BAAA;EACA,yDAAA;AACJ;;AAEA;EACI,uCAAA;EACA,qBAAA;EACA,2BAAA;EACA,4BAAA;EACA,SAAA;AACJ;;AAEA;EACI,aAAA;EACA,+BAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;AACJ;;AAEA;EAEI,YAAA;AAAJ;;AAGA;EACI,iBAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,uCAAA;AAAJ;;AAGA;EACI,uBAAA;EACA,oBAAA;EACA,mBAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,yBAAA;AAAJ","sourcesContent":[":root {\r\n    --main-font: clamp(16px, 1.6vw, 1.5rem);\r\n    --title-font: clamp(20px, 3vw, 5rem);\r\n    --font-color: rgb(0, 0, 0);\r\n    --background-img: url('../dist/images/pexels-rachel-claire.jpg');\r\n}\r\n\r\nbody {\r\n    background-image: var(--background-img);\r\n    background-size:auto;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    margin: 0;\r\n}\r\n\r\n#content {\r\n    display: grid;\r\n    grid-template-rows: 1fr 5fr 1fr;\r\n}\r\n\r\n.header {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    grid-row: 1 / 2;\r\n}\r\n\r\n.header-button {\r\n\r\n    margin: 1rem;\r\n}\r\n\r\n.active-button {\r\n    border: 3px solid;\r\n}\r\n\r\n.main-content {\r\n    grid-row: 2 / 3;\r\n}\r\n\r\n.footer {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n    grid-row: 3 / 4;\r\n    align-items: center;\r\n    justify-content: center;\r\n    font-size: calc(var(--main-font) - 3px);\r\n}\r\n\r\n.github-mark {\r\n    width: var(--main-font);\r\n    transition: all .3s;\r\n    margin-left: .2rem;\r\n    margin-right: .2rem;\r\n}\r\n\r\n.github-mark:hover {\r\n    transform: rotate(360deg);\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -218,6 +127,41 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
 /*!************************************************************!*\
   !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
@@ -240,20 +184,6 @@ module.exports = function (item) {
   }
   return [content].join("\n");
 };
-
-/***/ }),
-
-/***/ "./dist/githubmark.png":
-/*!*****************************!*\
-  !*** ./dist/githubmark.png ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "githubmark.png");
 
 /***/ }),
 
@@ -576,6 +506,131 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function contactPage() {
+    return console.log('contact');
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactPage);
+
+/***/ }),
+
+/***/ "./src/initial.js":
+/*!************************!*\
+  !*** ./src/initial.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _dist_images_githubmark_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dist/images/githubmark.png */ "./dist/images/githubmark.png");
+
+
+function initialPageRender() {
+    const container = document.getElementById('content');
+
+    const header = document.createElement('div');
+    const mainContent = document.createElement('div');
+    const footer = document.createElement('div');
+    
+    header.classList.add('header');
+    mainContent.classList.add('main-content');
+    footer.classList.add('footer');
+    
+    container.append(header, mainContent, footer);
+
+    const homeButton = document.createElement('div');
+    const menuButton = document.createElement('div');
+    const contactButton = document.createElement('div');
+
+    homeButton.classList.add('header-button');
+    menuButton.classList.add('header-button');
+    contactButton.classList.add('header-button');
+
+    homeButton.textContent = 'Home';
+    menuButton.textContent = 'Menu';
+    contactButton.textContent = 'Contact';
+
+    header.append(homeButton, menuButton, contactButton);
+
+    const footerContent = document.createElement('p');
+    const footerCopyright = document.createElement('a');
+    const footerHref = document.createElement('a');
+    const footerImg = document.createElement('img');
+    const footerYearContainer = document.createElement('a');
+    const footerYear = new Date().getFullYear();
+    const footerMailTo = document.createElement('a');
+    const footerBackImg = document.createElement('a');
+    
+    footerCopyright.textContent = 'Copyright';
+    footerHref.setAttribute('href', 'https://github.com/proffery/odin-restaurant-page');
+    footerImg.classList.add('github-mark');
+    footerImg.src = _dist_images_githubmark_png__WEBPACK_IMPORTED_MODULE_0__;
+    footerYearContainer.textContent = ` ${footerYear} `;
+    footerMailTo.setAttribute('href', 'mailto:proffery@gmail.com');
+    footerMailTo.setAttribute('title', 'Dmitry Shamko');
+    footerMailTo.textContent = ' Dmitry Shamko';
+    footerBackImg.textContent = 'Photo by Rachel Claire from Pexels'
+    footerBackImg.setAttribute('href', 'https://www.pexels.com/photo/mug-of-coffee-on-wooden-table-4577860/');
+    
+    footerHref.appendChild(footerImg);
+    footerContent.append(footerCopyright, footerHref,  footerMailTo, footerYearContainer,footerBackImg);
+    footer.appendChild(footerContent);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initialPageRender);
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function menuPage() {
+    return console.log('menu');
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuPage);
+
+/***/ }),
+
+/***/ "./dist/images/githubmark.png":
+/*!************************************!*\
+  !*** ./dist/images/githubmark.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/githubmark.png";
+
+/***/ }),
+
+/***/ "./dist/images/pexels-rachel-claire.jpg":
+/*!**********************************************!*\
+  !*** ./dist/images/pexels-rachel-claire.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/pexels-rachel-claire.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -603,6 +658,9 @@ module.exports = styleTagTransform;
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -675,6 +733,32 @@ module.exports = styleTagTransform;
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
