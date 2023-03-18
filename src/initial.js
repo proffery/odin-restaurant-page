@@ -20,6 +20,9 @@ function initialPageRender() {
     homeButton.classList.add('header-button');
     menuButton.classList.add('header-button');
     contactButton.classList.add('header-button');
+    homeButton.classList.add('home');
+    menuButton.classList.add('menu');
+    contactButton.classList.add('contact');
 
     homeButton.textContent = 'Home';
     menuButton.textContent = 'Menu';
@@ -52,4 +55,9 @@ function initialPageRender() {
     footer.appendChild(footerContent);
 }
 
-export default initialPageRender;
+function homePageRender() {
+    const homeButton = document.querySelector('.home')
+    homeButton.classList.add('active-button');
+}
+
+export {initialPageRender, homePageRender};
