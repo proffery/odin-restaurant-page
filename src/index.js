@@ -1,10 +1,34 @@
 import {initialPageRender, homePageRender} from "./initial";
-import menuPage from "./menu";
-import contactPage from "./contact";
+import menuPageRender from "./menu";
+import contactPageRender from "./contact";
 import css from "./style.css";
 
-// console.log('Index');
 initialPageRender();
 homePageRender();
-// console.log(menuPage());
-// console.log(contactPage());
+const mainContent = document.querySelector('.main-content');
+const headerButtons = document.querySelectorAll('.header-button');
+headerButtons.forEach(button => button.addEventListener('click', changeContent));
+
+function changeContent(e) {
+    headerButtons.forEach(button => button.classList.remove('active-button'));
+    
+    let child = mainContent.lastElementChild;
+    while (child) {
+        mainContent.removeChild(child);
+        child = mainContent.lastElementChild;
+    }
+
+    if (e.target.className.includes('home')) {
+        homePageRender();
+    }
+
+    else if (e.target.className.includes('menu')) {
+        menuPageRender();
+    }
+
+    else {
+        contactPageRender();
+    }
+
+
+}

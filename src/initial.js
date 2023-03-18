@@ -1,4 +1,5 @@
-import githubmark from '../dist/images/githubmark.png';
+import githubmark from '../dist/img/githubmark.png';
+import homeImg from '../dist/img/pexels-rachel-claire-home.jpg';
 
 function initialPageRender() {
     const container = document.getElementById('content');
@@ -49,7 +50,7 @@ function initialPageRender() {
     footerMailTo.textContent = ' Dmitry Shamko';
     footerBackImg.textContent = 'Photo by Rachel Claire from Pexels'
     footerBackImg.setAttribute('title', 'Go to Pexels');
-    footerBackImg.setAttribute('href', 'https://www.pexels.com/photo/mug-of-coffee-on-wooden-table-4577860/');
+    footerBackImg.setAttribute('href', 'https://www.pexels.com/@rachel-claire/');
     
     footerHref.appendChild(footerImg);
     footerContent.append(footerCopyright, footerHref,  footerMailTo, footerYearContainer,footerBackImg);
@@ -57,8 +58,25 @@ function initialPageRender() {
 }
 
 function homePageRender() {
+    const mainContainer = document.querySelector('.main-content');
     const homeButton = document.querySelector('.home')
     homeButton.classList.add('active-button');
+
+    const homeImgHolder = document.createElement('div');
+    const homeLogo = document.createElement('img')
+    const homeTextContainer = document.createElement('p');
+
+    homeImgHolder.classList.add('home-img-holder');
+    homeLogo.classList.add('home-img');
+    homeLogo.src = homeImg;
+    homeTextContainer.classList.add('home-text');
+
+    homeTextContainer.textContent = 'Welcome to our restaurant page! We are delighted to present our menu that offers a wide range of delicious dishes that cater to all tastes and preferences. Our team of skilled chefs prepares the dishes using fresh, locally sourced ingredients to ensure the highest quality and taste. Whether you are looking for a quick lunch, a romantic dinner or a family-friendly meal, our restaurant is the perfect spot to satisfy your cravings. We pride ourselves on offering a warm and inviting ambiance that makes you feel at home. We look forward to welcoming you to our restaurant soon!';
+
+    homeImgHolder.appendChild(homeLogo);
+    mainContainer.append(homeImgHolder, homeTextContainer);
+
+
 }
 
 export {initialPageRender, homePageRender};

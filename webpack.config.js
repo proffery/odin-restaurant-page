@@ -4,7 +4,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'images/[name][ext]',
+        assetModuleFilename: 'img/[name][ext]',
     },
     mode: 'development',
     module: {
