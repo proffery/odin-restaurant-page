@@ -7,6 +7,28 @@
     --shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px, rgba(255, 254, 254, 0.23) 0px 6px 6px;;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background-color: var(--font-color);
+opacity: .5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: var(--background-color); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+
+}
+
 body {
     display: flex;
     font-size: var(--main-font);
