@@ -4,7 +4,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: '[name][ext]',
+        assetModuleFilename: 'images/[name][ext]',
     },
     mode: 'development',
     module: {
@@ -20,20 +20,7 @@ module.exports = {
 
             {
                 test: /\.(png|jpe?g|gif)$/i,
-                use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                    },
-                  },
-                ],
-            },
-
-            {
-                test: /\.jsx?$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/,
+                type: 'asset/resource',
             },
         ],
     },

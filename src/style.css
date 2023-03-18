@@ -1,12 +1,18 @@
 :root {
     --main-font: clamp(16px, 1.6vw, 1.5rem);
     --title-font: clamp(20px, 3vw, 5rem);
-    --font-color: rgb(0, 0, 0);
-    --background-color: rgb(228, 206, 206);
+    --font-color: rgb(230, 218, 218);
+    --background-img: url('../dist/images/pexels-rachel-claire.jpg');
+    --shadow: 1px 1px 2px rgb(232, 241, 241);
 }
 
 body {
-    background-color: var(--background-color);
+    font-size: var(--main-font);
+    color: var(--font-color);
+    background-image: var(--background-img);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
     margin: 0;
 }
 
@@ -16,23 +22,21 @@ body {
 }
 
 .header {
-    border: 1px solid;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     grid-row: 1 / 2;
 }
 
 .header-button {
-    border: 1px solid;
+    margin: 1rem;
 }
 
 .active-button {
-    border: 3px solid;
+    box-shadow: var(--shadow);
 }
 
 .main-content {
-    border: 1px solid;
     grid-row: 2 / 3;
 }
 
@@ -40,7 +44,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
     grid-row: 3 / 4;
     align-items: center;
     justify-content: center;
@@ -49,9 +52,26 @@ body {
 
 .github-mark {
     width: var(--main-font);
+    filter: invert(1);
     transition: all .3s;
+    margin-left: .2rem;
+    margin-right: .2rem;
 }
 
 .github-mark:hover {
     transform: rotate(360deg);
+}
+
+a[href] {
+    color: var(--font-color);
+    text-decoration: none;
+    transition: all .2s;
+}
+
+a[href]:hover {
+    text-shadow: var(--shadow);
+}
+
+a:visited {
+    color: var(--font-color);
 }

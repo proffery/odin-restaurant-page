@@ -1,4 +1,4 @@
-import githubmark from '/dist/githubmark.png';
+import githubmark from '../dist/images/githubmark.png';
 
 function initialPageRender() {
     const container = document.getElementById('content');
@@ -34,26 +34,21 @@ function initialPageRender() {
     const footerYearContainer = document.createElement('a');
     const footerYear = new Date().getFullYear();
     const footerMailTo = document.createElement('a');
+    const footerBackImg = document.createElement('a');
     
     footerCopyright.textContent = 'Copyright';
     footerHref.setAttribute('href', 'https://github.com/proffery/odin-restaurant-page');
     footerImg.classList.add('github-mark');
     footerImg.src = githubmark;
-    footerYearContainer.textContent = `${footerYear}`;
+    footerYearContainer.textContent = ` ${footerYear} `;
     footerMailTo.setAttribute('href', 'mailto:proffery@gmail.com');
     footerMailTo.setAttribute('title', 'Dmitry Shamko');
-    footerMailTo.textContent = 'Dmitry Shamko';
+    footerMailTo.textContent = ' Dmitry Shamko';
+    footerBackImg.textContent = 'Photo by Rachel Claire from Pexels'
+    footerBackImg.setAttribute('href', 'https://www.pexels.com/photo/mug-of-coffee-on-wooden-table-4577860/');
     
     footerHref.appendChild(footerImg);
-    footerContent.append(footerCopyright, footerHref, footerYearContainer, footerMailTo);
-
-    // footerContent.innerHTML = `
-    //     <a>Copyright</a>
-    //     <a href="https://github.com/proffery"><img class="github-mark" src="/img/github-mark.png"></a> 
-    //     <a><script>document.write(new Date().getFullYear())</script></a> 
-    //     <a href="mailto:proffery@gmail.com" title="Dmitry Shamko">Dmitry Shamko</a>
-    //     <a>for Odin Project</a>
-    // `;
+    footerContent.append(footerCopyright, footerHref,  footerMailTo, footerYearContainer,footerBackImg);
     footer.appendChild(footerContent);
 }
 
